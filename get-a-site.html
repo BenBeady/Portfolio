@@ -12,7 +12,7 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Web Development Services — Benjamen Beady",
-    "description": "Custom website design and development for small businesses, artists, musicians, and organizations.",
+    "description": "Custom website design and development for small businesses, athletes, artists, and organizations.",
     "provider": {
       "@type": "Person",
       "name": "Benjamen Beady",
@@ -32,44 +32,65 @@
 <body>
 
 <header>
-  <h1 id="main-heading">Get a Site Built</h1>
-  <nav aria-label="Site navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="get-a-site.html" class="nav-cta">Get a Site Built</a></li>
-    </ul>
-  </nav>
+  <div class="header-inner">
+    <a href="index.html" class="site-logo">BB<span class="logo-dot">.</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Site navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="get-a-site.html" class="nav-cta">Get a Site Built</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main>
 
-  <section>
-    <h2>Let's build something</h2>
-    <p>Whether you're a small business, a musician, an organization, or anyone who needs a real web presence — I build websites that are clean, fast, accessible, and actually built to last.</p>
+  <section class="reveal">
+    <h2>Let's Build Something</h2>
+    <div class="availability-badge">Available for new projects</div>
+    <p>Whether you're a small business, an athlete, an artist, an organization, or anyone who needs a real web presence — I build websites that are clean, fast, accessible, and actually built to last.</p>
     <p class="highlight">No site builders. No bloated frameworks. Just solid, hand-crafted code that works for your users and holds up over time.</p>
     <p>Fill out the form below with as much detail as you can. I'll review it and get back to you within 1–2 business days to talk through whether it's a good fit and what it would take to get started.</p>
   </section>
 
-  <section>
-    <h2>What I build</h2>
-    <article>
-      <ul>
-        <li>Small business websites — professional presence without the agency price tag</li>
-        <li>Artist and musician sites — built around your identity and your fans</li>
-        <li>Organization and chapter sites — Greek life, nonprofits, clubs, and associations</li>
-        <li>Portfolio and personal brand sites</li>
-        <li>Landing pages and event sites</li>
-        <li>Redesigns and refreshes of existing sites</li>
-        <li>Accessibility audits and structured data improvements</li>
-      </ul>
-    </article>
+  <section class="reveal">
+    <h2>What I Build</h2>
+    <div class="skill-grid stagger">
+      <div class="skill-card">
+        <h3>Business &amp; Brand Sites</h3>
+        <p>Professional presence for small businesses — without the bloated agency price tag. Clean, fast, and built to convert.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Athlete &amp; Sports Sites</h3>
+        <p>Personal sites for athletes and sports figures built around your identity and your fans. Distinct, fast, and mobile-ready.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Artist &amp; Creative Sites</h3>
+        <p>Sites for musicians, artists, and creatives that feel as distinct as your work. I collaborate closely from concept to launch.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Organization &amp; Chapter Sites</h3>
+        <p>Greek life, nonprofits, clubs, and associations — sites that serve real organizational needs and look credible doing it.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Portfolio &amp; Personal Brand</h3>
+        <p>Your work deserves a home that doesn't look like a template. I build portfolio sites that stand out and tell your story.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Redesigns &amp; Audits</h3>
+        <p>Refreshing an existing site, improving accessibility, or adding structured data — I can take what you have and make it work the way it should.</p>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Project inquiry form</h2>
+  <section class="reveal">
+    <h2>Project Inquiry Form</h2>
     <p>Tell me about your project. The more detail you share here, the faster we can get the conversation going.</p>
 
     <div class="form-grid" id="inquiry-form">
@@ -103,6 +124,7 @@
           <option value="new-site">Brand new website</option>
           <option value="redesign">Redesign / refresh of existing site</option>
           <option value="landing-page">Landing page or event page</option>
+          <option value="athlete">Athlete or sports figure site</option>
           <option value="artist">Artist or musician site</option>
           <option value="organization">Organization or chapter site</option>
           <option value="audit">Accessibility or SEO audit</option>
@@ -157,24 +179,27 @@
 
     </div>
 
-    <div id="form-success" style="display:none; margin-top:1.5rem; padding:1.25rem 1.75rem; background-color:#edf4ef; border-left:6px solid #2e6b4f; border-radius:0 6px 6px 0;">
-      <h3 style="color:#2e6b4f; margin-bottom:0.5rem;">Thanks — I'll be in touch!</h3>
-      <p style="margin:0;">Your inquiry came through. I'll review it and follow up within 1–2 business days. If it's urgent, you can also reach me on <a href="https://www.linkedin.com/in/benjamenbeady" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+    <div id="form-success" class="form-success">
+      <h3>Thanks — I'll be in touch!</h3>
+      <p>Your inquiry came through. I'll review it and follow up within 1–2 business days. If it's urgent, you can also reach me on <a href="https://www.linkedin.com/in/benjamenbeady" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
     </div>
   </section>
 
-  <section>
-    <h2>A few things to know upfront</h2>
+  <section class="reveal">
+    <h2>A Few Things to Know Upfront</h2>
+
     <article>
-      <h3>I'm selective about projects</h3>
+      <h3>I'm Selective About Projects</h3>
       <p>I take on a small number of projects at a time so each one gets real attention. If your project isn't a fit for my current availability or skill set, I'll tell you honestly — I'd rather do that than overpromise.</p>
     </article>
+
     <article>
-      <h3>Scope and cost are agreed upfront</h3>
+      <h3>Scope and Cost Are Agreed Upfront</h3>
       <p>Before any work begins, we agree on exactly what's being built, what it will cost, and when it will be done. No vague retainers, no scope creep surprises.</p>
     </article>
+
     <article>
-      <h3>You'll own everything</h3>
+      <h3>You'll Own Everything</h3>
       <p>When the project is complete, you own the code, the domain, the hosting — all of it. I don't hold your site hostage or lock you into recurring fees you didn't ask for.</p>
     </article>
   </section>
@@ -182,13 +207,14 @@
 </main>
 
 <footer>
-  <p>&copy; 2026 Benjamen Beady &mdash; Developer at GetUWired &amp; Independent Web Developer</p>
+  <p>&copy; 2026 Benjamen Beady &mdash; Developer at <a href="https://getuwired.com" target="_blank" rel="noopener noreferrer">GetUWired</a> &amp; Independent Web Developer</p>
 </footer>
 
+<script src="js/main.js" defer></script>
 <script>
   function handleSubmit() {
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
+    const name        = document.getElementById('name').value.trim();
+    const email       = document.getElementById('email').value.trim();
     const projectType = document.getElementById('project-type').value;
     const description = document.getElementById('description').value.trim();
 
@@ -197,12 +223,11 @@
       return;
     }
 
-    // Hide the form, show success message
     document.getElementById('inquiry-form').style.display = 'none';
-    document.getElementById('form-success').style.display = 'block';
-    document.getElementById('form-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    const success = document.getElementById('form-success');
+    success.style.display = 'block';
+    success.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 </script>
-
 </body>
 </html>

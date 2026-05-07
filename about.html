@@ -34,7 +34,7 @@
         }
       },
       "sameAs": ["https://www.linkedin.com/in/benjamenbeady"],
-      "knowsAbout": ["Full Stack Development", "Backend Development", "Semantic HTML5", "CSS3", "JavaScript", "APIs", "Marketing Automation", "Web Accessibility", "JSON-LD"]
+      "knowsAbout": ["Full Stack Development","Backend Development","Semantic HTML5","CSS3","JavaScript","APIs","Marketing Automation","Web Accessibility","JSON-LD"]
     }
   }
   </script>
@@ -42,63 +42,69 @@
 <body>
 
 <header>
-  <h1 id="main-heading">About Me</h1>
-  <nav aria-label="Site navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="get-a-site.html" class="nav-cta">Get a Site Built</a></li>
-    </ul>
-  </nav>
+  <div class="header-inner">
+    <a href="index.html" class="site-logo">BB<span class="logo-dot">.</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Site navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="get-a-site.html" class="nav-cta">Get a Site Built</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main>
 
-  <section>
-    <h2>Who I am</h2>
+  <section class="reveal">
+    <h2>Who I Am</h2>
+    <div class="availability-badge">Available for new projects</div>
     <p>My name is Benjamen Beady. I'm a developer at <strong>GetUWired</strong> — a full-service internet marketing and automation agency based out of Dahlonega, GA — and a December 2025 graduate of the <strong>University of Kentucky</strong> with degrees in <strong>Information Technology and Computer Science</strong>.</p>
     <p class="highlight">My day job is development at GetUWired. Building websites for clients is what I do on the side — and I take it just as seriously.</p>
-    <p>On the web side, I take on independent projects for clients I genuinely care about — including <strong><a href="https://kentuckypikes.com" target="_blank" rel="noopener noreferrer">kentuckypikes.com</a></strong> for Pi Kappa Alpha at the University of Kentucky, and <strong><a href="https://outdoorbills.co" target="_blank" rel="noopener noreferrer">outdoorbills.co</a></strong> for musician Bill Leroy of the Savannah Bananas.</p>
+    <p>On the web side, I take on independent projects for clients I genuinely care about — including <strong><a href="https://kentuckypikes.com" target="_blank" rel="noopener noreferrer">kentuckypikes.com</a></strong> for Pi Kappa Alpha at the University of Kentucky, and <strong><a href="https://outdoorbills.co" target="_blank" rel="noopener noreferrer">outdoorbills.co</a></strong> for baseball player Bill Leroy of the Savannah Bananas.</p>
   </section>
 
-  <section>
-    <h2>My day job — GetUWired</h2>
+  <section class="reveal">
+    <h2>My Day Job — GetUWired</h2>
     <p><strong><a href="https://getuwired.com" target="_blank" rel="noopener noreferrer">GetUWired</a></strong> has been helping small businesses compete online since 2003. They're a 100% remote, full-service internet marketing and automation agency operating out of Dahlonega, GA — and one of the more recognized names in the small business marketing space, with awards from Glassdoor, Entrepreneur Magazine, and Georgia Trend over the years.</p>
     <p>What GetUWired does is broad: web design, email marketing, conversion copywriting, lead generation, Google Ads, marketing automation (they're a long-standing certified Keap/Infusionsoft partner), and API integrations across dozens of platforms. The mission is straightforward — help small businesses grow online without needing a Fortune 500 budget to do it.</p>
     <p>As a developer there, I work across that stack — building and maintaining systems, handling API integrations, and contributing to the technical side of what makes client campaigns and automations actually run.</p>
   </section>
 
-  <section>
-    <h2>How I approach web development</h2>
+  <section class="reveal">
+    <h2>How I Approach Web Development</h2>
 
     <article>
-      <h3>Semantic structure first</h3>
-      <p>Before I think about design or interactivity, I think about structure. A page built on solid semantic HTML communicates meaning to browsers, screen readers, search engines, and future developers — not just the person currently looking at it. That foundation matters.</p>
+      <h3>Semantic Structure First</h3>
+      <p>Before I think about design or interactivity, I think about structure. A page built on solid semantic HTML communicates meaning to browsers, screen readers, search engines, and future developers — not just the person currently looking at it.</p>
       <p>I use elements like <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code>, and <code>footer</code> because they carry meaning. Generic <code>div</code> containers don't. That discipline compounds over time into code that's easier to maintain and easier for everyone to use.</p>
     </article>
 
     <article>
-      <h3>Accessibility is not optional</h3>
+      <h3>Accessibility Is Not Optional</h3>
       <p>Accessibility isn't something I bolt on at the end — it shapes how I build from the beginning. Every project I deliver is tested with WAVE and reviewed with screen reader tooling. I implement ARIA attributes, logical heading hierarchies, visible focus states, and color contrast that meets WCAG AA standards.</p>
     </article>
 
     <article>
-      <h3>Details are the product</h3>
+      <h3>Details Are the Product</h3>
       <p>The difference between a site that feels trustworthy and one that feels rough is almost always in the details — heading hierarchy, consistent spacing, labels that match their inputs, error states that actually help. Users don't notice these things when they're right. They notice immediately when they're wrong.</p>
     </article>
   </section>
 
-  <section>
+  <section class="reveal">
     <h2>Background</h2>
     <p>I graduated from the <strong>University of Kentucky</strong> in December 2025 with degrees in <strong>Information Technology and Computer Science</strong>. That background goes beyond just writing code — it covers how systems are designed, how data moves, how networks behave, and how software engineering decisions play out at scale.</p>
     <p>Combined with hands-on work at GetUWired and building real client sites on the side, that foundation is what I bring to every project I take on.</p>
     <p>Feel free to connect on LinkedIn: <a href="https://www.linkedin.com/in/benjamenbeady" target="_blank" rel="noopener noreferrer">linkedin.com/in/benjamenbeady</a>.</p>
   </section>
 
-  <section>
-    <h2>What I'm working on</h2>
+  <section class="reveal">
+    <h2>What I'm Working On</h2>
     <p>At GetUWired, I'm continuously working across client projects — integrations, automation builds, and system-level work that keeps campaigns running. On the web development side, <a href="https://kentuckypikes.com" target="_blank" rel="noopener noreferrer">Kentucky Pikes</a> and <a href="https://outdoorbills.co" target="_blank" rel="noopener noreferrer">Outdoor Bills</a> are both live, and I'm open to the right next project.</p>
     <p>If you're looking to have a site built, <a href="get-a-site.html">fill out my project inquiry form</a> and I'll get back to you.</p>
   </section>
@@ -106,8 +112,9 @@
 </main>
 
 <footer>
-  <p>&copy; 2026 Benjamen Beady &mdash; Developer at GetUWired &amp; Independent Web Developer</p>
+  <p>&copy; 2026 Benjamen Beady &mdash; Developer at <a href="https://getuwired.com" target="_blank" rel="noopener noreferrer">GetUWired</a> &amp; Independent Web Developer</p>
 </footer>
 
+<script src="js/main.js" defer></script>
 </body>
 </html>

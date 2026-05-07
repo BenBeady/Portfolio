@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Benjamen Beady — Web Developer & Software Developer at GetUWired. Developer at GetUWired and independent web developer. IT &amp; CS graduate, University of Kentucky.">
+  <meta name="description" content="Benjamen Beady — Web Developer & Software Developer at GetUWired. IT &amp; CS graduate, University of Kentucky.">
   <meta name="author" content="Benjamen Beady">
   <title>Home | Benjamen Beady</title>
   <link rel="stylesheet" href="css/styles.css">
@@ -30,7 +30,7 @@
         }
       },
       "sameAs": ["https://www.linkedin.com/in/benjamenbeady"],
-      "knowsAbout": ["HTML5", "CSS3", "JavaScript", "Flexbox", "JSON-LD", "Web Accessibility", "Full Stack Development", "Backend Development"]
+      "knowsAbout": ["HTML5","CSS3","JavaScript","Flexbox","JSON-LD","Web Accessibility","Full Stack Development","Backend Development"]
     }
   }
   </script>
@@ -38,107 +38,114 @@
 <body>
 
 <header>
-  <h1 id="main-heading">Benjamen Beady</h1>
-  <nav aria-label="Site navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="get-a-site.html" class="nav-cta">Get a Site Built</a></li>
-    </ul>
-  </nav>
+  <div class="header-inner">
+    <a href="index.html" class="site-logo">BB<span class="logo-dot">.</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Site navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="get-a-site.html" class="nav-cta">Get a Site Built</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main>
 
-  <section>
-    <h2>Web Developer</h2>
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-inner">
 
-    <img src="https://raw.githubusercontent.com/BenBeady/web_project_2026/refs/heads/main/1761798794491.jfif"
-         alt="Professional headshot of Benjamen Beady">
+      <div>
+        <span class="hero-greeting">Hi, my name is</span>
+        <h1>Benjamen Beady.</h1>
+        <p class="hero-sub"><span class="typed-text"></span><span class="cursor">|</span></p>
 
-    <p><strong>Building for the web — one well-crafted project at a time.</strong></p>
-    <p>I'm a developer at <strong>GetUWired</strong> — a full-service internet marketing and automation agency in Dahlonega, GA — and a December 2025 graduate of the <strong>University of Kentucky</strong> with degrees in Information Technology and Computer Science.</p>
-    <p>Web development is my side business, and I take it just as seriously as my day job. I care about the details most people don't see — proper HTML structure, accessible markup, meaningful structured data, and performance that doesn't make users wait.</p>
-    <p>My independent clients include <strong><a href="https://outdoorbills.co" target="_blank" rel="noopener noreferrer">Outdoor Bills</a></strong> — musician Bill Leroy of the Savannah Bananas — and <strong><a href="https://kentuckypikes.com" target="_blank" rel="noopener noreferrer">Kentucky Pikes</a></strong>, the official site for Pi Kappa Alpha at the University of Kentucky.</p>
+        <div class="hero-body">
+          <p>I'm a developer at <strong><a href="https://getuwired.com" target="_blank" rel="noopener noreferrer">GetUWired</a></strong> — a full-service internet marketing and automation agency in Dahlonega, GA — and a December 2025 graduate of the <strong>University of Kentucky</strong> with degrees in Information Technology and Computer Science.</p>
+          <p>I build clean, fast, accessible websites for clients I care about. My independent work includes <strong><a href="https://outdoorbills.co" target="_blank" rel="noopener noreferrer">Outdoor Bills</a></strong> — the personal site of Bill Leroy, baseball player for the Savannah Bananas — and <strong><a href="https://kentuckypikes.com" target="_blank" rel="noopener noreferrer">Kentucky Pikes</a></strong>, the official site for Pi Kappa Alpha at the University of Kentucky.</p>
 
-    <blockquote>
-      <p>Good code is written for the next developer. Great code is written for the user who never sees it.</p>
-    </blockquote>
+          <blockquote>
+            <p>Good code is written for the next developer. Great code is written for the user who never sees it.</p>
+          </blockquote>
+
+          <div class="hero-cta">
+            <a href="projects.html" class="btn btn-primary">View My Work</a>
+            <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <img
+          class="hero-photo"
+          src="https://raw.githubusercontent.com/BenBeady/web_project_2026/refs/heads/main/1761798794491.jfif"
+          alt="Professional headshot of Benjamen Beady"
+        >
+      </div>
+
+    </div>
   </section>
 
-  <section class="two-column">
-    <h2>What I do</h2>
-
-    <article class="box-demo-parent">
-      <h3>Front-End Development</h3>
-      <p class="box-demo-child">I build interfaces using semantic HTML5, CSS3, and JavaScript. Every project I ship is validated, accessible, and structured with care. I rely on Flexbox for layouts and write CSS that scales cleanly without relying on hacks or heavy frameworks.</p>
-    </article>
-
-    <article>
-      <h3>Back-End &amp; Full Stack</h3>
-      <p>My real interest is in how systems connect. Backend logic, APIs, data flow, and building reliable behavior when real users interact with real inputs — that's where I spend a lot of my energy. At GetUWired I work across the stack, which has sharpened both sides of my skill set.</p>
-    </article>
+  <!-- ── WHAT I DO ─────────────────────────────────────────── -->
+  <section class="reveal">
+    <h2>What I Do</h2>
+    <div class="skill-grid stagger">
+      <div class="skill-card">
+        <h3>Front-End Development</h3>
+        <p>I build interfaces using semantic HTML5, CSS3, and JavaScript. Every project I ship is validated, accessible, and structured with care — no hacks, no bloat.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Back-End &amp; Full Stack</h3>
+        <p>Backend logic, APIs, data flow, and reliable behavior under real user input. At GetUWired I work across the full stack, which has sharpened both sides of my skill set.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Marketing Automation</h3>
+        <p>API integrations, CMS builds, campaign automation — the systems that make client marketing actually run. It's where technical work meets measurable business impact.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="skills">
-    <h2>Skills overview</h2>
-    <p>The following table summarizes core areas where I have hands-on, professional experience. These are skills I use in production work — not just side projects.</p>
-    <table>
-      <caption>Professional Skills Summary</caption>
-      <thead>
-        <tr>
-          <th scope="col">Skill Area</th>
-          <th scope="col">Where I've Applied It</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>HTML5 &amp; Semantic Markup</td>
-          <td>All client projects, including Kentucky Pikes and Outdoor Bills.</td>
-        </tr>
-        <tr>
-          <td>CSS3 &amp; Flexbox Layout</td>
-          <td>Responsive layouts across GetUWired client work and independent projects.</td>
-        </tr>
-        <tr>
-          <td>JavaScript</td>
-          <td>Interactive features, form validation, and dynamic content in production sites.</td>
-        </tr>
-        <tr>
-          <td>JSON-LD &amp; Structured Data</td>
-          <td>Schema.org markup implemented on all pages of this site and client projects.</td>
-        </tr>
-        <tr>
-          <td>Web Accessibility (WCAG)</td>
-          <td>ARIA attributes, semantic landmarks, and WAVE-tested color contrast on every project.</td>
-        </tr>
-        <tr>
-          <td>Backend Development</td>
-          <td>APIs, server-side logic, and data handling at GetUWired and in client projects.</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section>
-    <h2>Quick links</h2>
-    <p>Want to see what I've built or get in touch?</p>
-    <ul>
-      <li><a href="projects.html">View my projects</a></li>
-      <li><a href="get-a-site.html">Have a website built for your business</a></li>
-      <li><a href="about.html">Read more about me</a></li>
-      <li><a href="contact.html">Get in touch</a></li>
-      <li><a href="https://www.linkedin.com/in/benjamenbeady" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a></li>
+  <!-- ── SKILLS ─────────────────────────────────────────────── -->
+  <section id="skills" class="reveal">
+    <h2>Skills</h2>
+    <p>Core areas where I have hands-on, professional experience — skills I use in production, not just side projects.</p>
+    <ul class="skills-list stagger">
+      <li>HTML5 &amp; Semantic Markup</li>
+      <li>CSS3 &amp; Flexbox</li>
+      <li>JavaScript (ES6+)</li>
+      <li>JSON-LD &amp; Structured Data</li>
+      <li>Web Accessibility (WCAG)</li>
+      <li>Backend Development</li>
+      <li>API Integrations</li>
+      <li>Marketing Automation</li>
+      <li>Responsive Design</li>
+      <li>Git &amp; Version Control</li>
     </ul>
+  </section>
+
+  <!-- ── CONNECT ────────────────────────────────────────────── -->
+  <section class="reveal">
+    <h2>Let's Connect</h2>
+    <p>Want to see what I've built or get in touch?</p>
+    <div class="hero-cta">
+      <a href="projects.html" class="btn btn-primary">View Projects</a>
+      <a href="get-a-site.html" class="btn btn-outline">Get a Site Built</a>
+      <a href="https://www.linkedin.com/in/benjamenbeady" class="btn btn-outline" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
   </section>
 
 </main>
 
 <footer>
-  <p>&copy; 2026 Benjamen Beady &mdash; Developer at GetUWired &amp; Independent Web Developer</p>
+  <p>&copy; 2026 Benjamen Beady &mdash; Developer at <a href="https://getuwired.com" target="_blank" rel="noopener noreferrer">GetUWired</a> &amp; Independent Web Developer</p>
 </footer>
 
+<script src="js/main.js" defer></script>
 </body>
 </html>
