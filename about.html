@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Benjamen Beady — Web Developer at GetUWired. Background in full stack development, client work, and web accessibility.">
+  <meta name="description" content="About Benjamen Beady — Developer at GetUWired and independent web developer. IT and Computer Science graduate from the University of Kentucky.">
   <meta name="author" content="Benjamen Beady">
   <title>About | Benjamen Beady</title>
   <link rel="stylesheet" href="css/styles.css">
@@ -12,12 +12,16 @@
     "@context": "https://schema.org",
     "@type": "AboutPage",
     "name": "About Benjamen Beady",
-    "description": "Background and professional profile of Benjamen Beady, Web Developer at GetUWired in Dahlonega, GA.",
+    "description": "Background and professional profile of Benjamen Beady, Developer at GetUWired and independent web developer.",
     "mainEntity": {
       "@type": "Person",
       "name": "Benjamen Beady",
-      "jobTitle": "Web Developer",
-      "description": "Full stack web developer working at GetUWired. Builds accessible, semantically rich websites for musicians, Greek organizations, and business clients.",
+      "jobTitle": "Developer",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Kentucky"
+      },
+      "description": "Developer at GetUWired and independent web developer. IT and Computer Science graduate from the University of Kentucky, December 2025.",
       "worksFor": {
         "@type": "Organization",
         "name": "GetUWired",
@@ -30,7 +34,7 @@
         }
       },
       "sameAs": ["https://www.linkedin.com/in/benjamenbeady"],
-      "knowsAbout": ["Full Stack Development", "Backend Development", "Semantic HTML5", "CSS3", "JavaScript", "APIs", "Web Accessibility", "JSON-LD"]
+      "knowsAbout": ["Full Stack Development", "Backend Development", "Semantic HTML5", "CSS3", "JavaScript", "APIs", "Marketing Automation", "Web Accessibility", "JSON-LD"]
     }
   }
   </script>
@@ -54,50 +58,55 @@
 
   <section>
     <h2>Who I am</h2>
-    <p>My name is Benjamen Beady. I'm a web developer working at <strong>GetUWired</strong>, a web development company based in Dahlonega, GA. My background is in full stack development — I'm comfortable across the entire web stack, though my real passion lives on the back end, where data flows, systems connect, and the behavior of an application gets decided.</p>
-    <p class="highlight">I build things that work reliably for real people — not just in controlled demos, but in production, under actual use.</p>
-    <p>Outside of GetUWired, I take on independent projects for clients I genuinely care about. That includes building <strong><a href="https://kentuckypikes.com" target="_blank" rel="noopener noreferrer">kentuckypikes.com</a></strong> — the official site for Pi Kappa Alpha at the University of Kentucky — and <strong><a href="https://outdoorbills.co" target="_blank" rel="noopener noreferrer">outdoorbills.co</a></strong> for musician Bill Leroy of the Savannah Bananas.</p>
+    <p>My name is Benjamen Beady. I'm a developer at <strong>GetUWired</strong> — a full-service internet marketing and automation agency based out of Dahlonega, GA — and a December 2025 graduate of the <strong>University of Kentucky</strong> with degrees in <strong>Information Technology and Computer Science</strong>.</p>
+    <p class="highlight">My day job is development at GetUWired. Building websites for clients is what I do on the side — and I take it just as seriously.</p>
+    <p>On the web side, I take on independent projects for clients I genuinely care about — including <strong><a href="https://kentuckypikes.com" target="_blank" rel="noopener noreferrer">kentuckypikes.com</a></strong> for Pi Kappa Alpha at the University of Kentucky, and <strong><a href="https://outdoorbills.co" target="_blank" rel="noopener noreferrer">outdoorbills.co</a></strong> for musician Bill Leroy of the Savannah Bananas.</p>
   </section>
 
   <section>
-    <h2>How I approach development</h2>
+    <h2>My day job — GetUWired</h2>
+    <p><strong><a href="https://getuwired.com" target="_blank" rel="noopener noreferrer">GetUWired</a></strong> has been helping small businesses compete online since 2003. They're a 100% remote, full-service internet marketing and automation agency operating out of Dahlonega, GA — and one of the more recognized names in the small business marketing space, with awards from Glassdoor, Entrepreneur Magazine, and Georgia Trend over the years.</p>
+    <p>What GetUWired does is broad: web design, email marketing, conversion copywriting, lead generation, Google Ads, marketing automation (they're a long-standing certified Keap/Infusionsoft partner), and API integrations across dozens of platforms. The mission is straightforward — help small businesses grow online without needing a Fortune 500 budget to do it.</p>
+    <p>As a developer there, I work across that stack — building and maintaining systems, handling API integrations, and contributing to the technical side of what makes client campaigns and automations actually run.</p>
+  </section>
+
+  <section>
+    <h2>How I approach web development</h2>
 
     <article>
       <h3>Semantic structure first</h3>
       <p>Before I think about design or interactivity, I think about structure. A page built on solid semantic HTML communicates meaning to browsers, screen readers, search engines, and future developers — not just the person currently looking at it. That foundation matters.</p>
-      <p>I use elements like <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code>, <code>aside</code>, and <code>footer</code> because they carry meaning. Generic <code>div</code> containers don't. That's a small discipline that compounds over time into code that is easier to maintain and easier for everyone to use.</p>
+      <p>I use elements like <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code>, and <code>footer</code> because they carry meaning. Generic <code>div</code> containers don't. That discipline compounds over time into code that's easier to maintain and easier for everyone to use.</p>
     </article>
 
     <article>
       <h3>Accessibility is not optional</h3>
-      <p>Web accessibility isn't a feature to add at the end — it's a standard that shapes how I build from the beginning. Every project I deliver is tested with WAVE and reviewed with screen reader tooling. I implement ARIA attributes, logical heading hierarchies, visible focus states, and color contrast that meets WCAG AA standards.</p>
-      <p>Testing my own sites in high-contrast mode and with VoiceOver has taught me more about accessibility than any documentation. It changed how I write markup at a fundamental level.</p>
+      <p>Accessibility isn't something I bolt on at the end — it shapes how I build from the beginning. Every project I deliver is tested with WAVE and reviewed with screen reader tooling. I implement ARIA attributes, logical heading hierarchies, visible focus states, and color contrast that meets WCAG AA standards.</p>
     </article>
 
     <article>
       <h3>Details are the product</h3>
-      <p>In my experience, the difference between a site that feels trustworthy and one that feels rough is almost always in the details — heading hierarchy, consistent spacing, labels that match their inputs, error states that are actually helpful. Users don't consciously notice these things when they're right. They notice immediately when they're wrong.</p>
+      <p>The difference between a site that feels trustworthy and one that feels rough is almost always in the details — heading hierarchy, consistent spacing, labels that match their inputs, error states that actually help. Users don't notice these things when they're right. They notice immediately when they're wrong.</p>
     </article>
   </section>
 
   <section>
-    <h2>Professional background</h2>
-    <p>I work as a web developer at <strong>GetUWired</strong>, fully remote. Day to day, this means building and maintaining production websites for a diverse set of business clients — spanning new site builds, feature development, CMS integrations, performance improvements, and ongoing maintenance.</p>
-    <p>Working in a remote professional environment has sharpened not just my technical skills but my communication and project management habits. Shipping quality work requires real discipline, clear documentation, and the ability to ask the right questions before going far down the wrong path.</p>
-    <p>I'm also active on LinkedIn — feel free to connect: <a href="https://www.linkedin.com/in/benjamenbeady" target="_blank" rel="noopener noreferrer">linkedin.com/in/benjamenbeady</a>.</p>
+    <h2>Background</h2>
+    <p>I graduated from the <strong>University of Kentucky</strong> in December 2025 with degrees in <strong>Information Technology and Computer Science</strong>. That background goes beyond just writing code — it covers how systems are designed, how data moves, how networks behave, and how software engineering decisions play out at scale.</p>
+    <p>Combined with hands-on work at GetUWired and building real client sites on the side, that foundation is what I bring to every project I take on.</p>
+    <p>Feel free to connect on LinkedIn: <a href="https://www.linkedin.com/in/benjamenbeady" target="_blank" rel="noopener noreferrer">linkedin.com/in/benjamenbeady</a>.</p>
   </section>
 
   <section>
     <h2>What I'm working on</h2>
-    <p>Beyond my work at GetUWired, I'm building websites independently for clients who need a real web presence without the bloated agency price tag. <a href="https://kentuckypikes.com" target="_blank" rel="noopener noreferrer">Kentucky Pikes</a> is live and serving the chapter's community. <a href="https://outdoorbills.co" target="_blank" rel="noopener noreferrer">Outdoor Bills</a> is live for musician Bill Leroy.</p>
-    <p>Longer term, I want to keep deepening my backend skills — specifically in APIs, data architecture, and building systems that behave correctly and predictably at scale. The front end is where users live; the back end is where reliability is decided. I want to be strong at both.</p>
-    <p>If you're looking to have a website built, <a href="get-a-site.html">fill out my project inquiry form</a> and I'll get back to you.</p>
+    <p>At GetUWired, I'm continuously working across client projects — integrations, automation builds, and system-level work that keeps campaigns running. On the web development side, <a href="https://kentuckypikes.com" target="_blank" rel="noopener noreferrer">Kentucky Pikes</a> and <a href="https://outdoorbills.co" target="_blank" rel="noopener noreferrer">Outdoor Bills</a> are both live, and I'm open to the right next project.</p>
+    <p>If you're looking to have a site built, <a href="get-a-site.html">fill out my project inquiry form</a> and I'll get back to you.</p>
   </section>
 
 </main>
 
 <footer>
-  <p>&copy; 2026 Benjamen Beady &mdash; Web Developer &amp; GetUWired</p>
+  <p>&copy; 2026 Benjamen Beady &mdash; Developer at GetUWired &amp; Independent Web Developer</p>
 </footer>
 
 </body>
